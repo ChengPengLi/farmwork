@@ -1,12 +1,18 @@
 package com.ky3h.farmwork;
 
 import android.content.Intent;
+import android.os.Handler;
+import android.os.Message;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.ky3h.farmwork.base.BaseActivity;
+import com.ky3h.farmwork.netrequest.UserManager;
+import com.ky3h.farmwork.utils.NoHttpUtil;
+import com.yolanda.nohttp.rest.RequestQueue;
 
 /**
  * Created by lipengcheng on 2016/6/1.
@@ -17,6 +23,9 @@ public class Login extends BaseActivity {
     private EditText account, password;
     private TextView forgetPass;
     private String accountNumber, passWordNumber;
+    private RequestQueue requestQueue;
+
+    private UserManager manager;
 
     @Override
     public void touchListener(View v) {
@@ -24,47 +33,9 @@ public class Login extends BaseActivity {
             case R.id.btn_login:
                 accountNumber = account.getText().toString();
                 passWordNumber = password.getText().toString();
-//                if (StringUtil.isNullOrEmpty(accountNumber)) {
-//                    showShortToast("您的账号为空，请重新输入");
-//                } else if (StringUtil.isNullOrEmpty(passWordNumber)) {
-//                    showShortToast("您的密码为空，请重新输入");
-//                } else {
-//                    EMClient.getInstance().login(accountNumber,passWordNumber,new EMCallBack() {//回调
-//                        @Override
-//                        public void onSuccess() {
-//                            runOnUiThread(new Runnable() {
-//                                public void run() {
-//                                    EMClient.getInstance().groupManager().loadAllGroups();
-//                                    EMClient.getInstance().chatManager().loadAllConversations();
-//                                    Log.d("main", "登录聊天服务器成功！");
-//                                    Intent intent = new Intent(Login.this, MainActivity.class);
-//                                    startActivity(intent);
-//                                    SharedUtils.putString("account", accountNumber, Login.this);
-//                                    SharedUtils.putString("password", passWordNumber, Login.this);
-//                                    String zz = SharedUtils.getString("account", "", Login.this);
-//                                    String pp = SharedUtils.getString("account", "", Login.this);
-//                                    showShortToast(zz + "---" + pp);
-//                                    finish();
-//                                }
-//                            });
-//                        }
-//
-//                        @Override
-//                        public void onProgress(int progress, String status) {
-//
-//                        }
-//
-//                        @Override
-//                        public void onError(int code, String message) {
-//                            Log.d("main", "登录聊天服务器失败！");
-//                        }
-////                    });
-//
-//
-//                }
-                Intent intent = new Intent(this, MainActivity.class);
-                startActivity(intent);
-                  break;
+                requestQueue = NoHttpUtil.getRequestQueue();
+                manager.LoginFromNohttp(accountNumber, passWordNumber, requestQueue);
+                break;
             case R.id.btn_reg:
                 Intent intent1 = new Intent(Login.this, Regist.class);
                 startActivity(intent1);
@@ -96,9 +67,28 @@ public class Login extends BaseActivity {
         login.setOnClickListener(this);
         regist.setOnClickListener(this);
         forgetPass.setOnClickListener(this);
-
+        manager = new UserManager(handler);
 
     }
+
+    private Handler handler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
+            switch (msg.what) {
+                case UserManager.LOGIN_NETWORK_ERROR:
+                    showShortToast("您的网络出现问题，请重新尝试。。");
+                    break;
+                case UserManager.LOGIN_FAIL:
+                    showShortToast("抱歉，登录失败，请重试");
+                    break;
+                case UserManager.LOGIN_SUCCESS:
+                    showShortToast("抱歉，登录失败，请重试");
+                    break;
+
+            }
+        }
+    };
 
     @Override
     public void afterInitView() {

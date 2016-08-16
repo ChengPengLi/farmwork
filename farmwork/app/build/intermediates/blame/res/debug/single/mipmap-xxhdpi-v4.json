@@ -1,5 +1,13 @@
 [
     {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_event.png",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_event.png"
+    },
+    {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\cheese_2.jpg",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\cheese_2.jpg"
+    },
+    {
         "merged": "C:\\Users\\lipengcheng\\Downloads\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_done.png",
         "source": "C:\\Users\\lipengcheng\\Downloads\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_done.png"
     },
@@ -8,8 +16,60 @@
         "source": "C:\\Users\\lipengcheng\\Downloads\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\cheese_3.jpg"
     },
     {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\cheese_5.jpg",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\cheese_5.jpg"
+    },
+    {
         "merged": "C:\\Users\\lipengcheng\\Downloads\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_dashboard.png",
         "source": "C:\\Users\\lipengcheng\\Downloads\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_dashboard.png"
+    },
+    {
+        "merged": "C:\\Users\\lipengcheng\\Downloads\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_forum.png",
+        "source": "C:\\Users\\lipengcheng\\Downloads\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_forum.png"
+    },
+    {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_dashboard.png",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_dashboard.png"
+    },
+    {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_launcher.png",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\cheese_4.jpg",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\cheese_4.jpg"
+    },
+    {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_menu.png",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_menu.png"
+    },
+    {
+        "merged": "C:\\Users\\lipengcheng\\Downloads\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_headset.png",
+        "source": "C:\\Users\\lipengcheng\\Downloads\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_headset.png"
+    },
+    {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\cheese_1.jpg",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\cheese_1.jpg"
+    },
+    {
+        "merged": "C:\\Users\\lipengcheng\\Downloads\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_menu.png",
+        "source": "C:\\Users\\lipengcheng\\Downloads\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_menu.png"
+    },
+    {
+        "merged": "C:\\Users\\lipengcheng\\Downloads\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_event.png",
+        "source": "C:\\Users\\lipengcheng\\Downloads\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_event.png"
+    },
+    {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_forum.png",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_forum.png"
+    },
+    {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\cheese_3.jpg",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\cheese_3.jpg"
+    },
+    {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_done.png",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_done.png"
     },
     {
         "merged": "C:\\Users\\lipengcheng\\Downloads\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\cheese_1.jpg",
@@ -20,8 +80,8 @@
         "source": "C:\\Users\\lipengcheng\\Downloads\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\lipengcheng\\Downloads\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_forum.png",
-        "source": "C:\\Users\\lipengcheng\\Downloads\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_forum.png"
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_discuss.png",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_discuss.png"
     },
     {
         "merged": "C:\\Users\\lipengcheng\\Downloads\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_discuss.png",
@@ -36,19 +96,11 @@
         "source": "C:\\Users\\lipengcheng\\Downloads\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\cheese_5.jpg"
     },
     {
-        "merged": "C:\\Users\\lipengcheng\\Downloads\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_headset.png",
-        "source": "C:\\Users\\lipengcheng\\Downloads\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_headset.png"
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_headset.png",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_headset.png"
     },
     {
         "merged": "C:\\Users\\lipengcheng\\Downloads\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\cheese_2.jpg",
         "source": "C:\\Users\\lipengcheng\\Downloads\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\cheese_2.jpg"
-    },
-    {
-        "merged": "C:\\Users\\lipengcheng\\Downloads\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_menu.png",
-        "source": "C:\\Users\\lipengcheng\\Downloads\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_menu.png"
-    },
-    {
-        "merged": "C:\\Users\\lipengcheng\\Downloads\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_event.png",
-        "source": "C:\\Users\\lipengcheng\\Downloads\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_event.png"
     }
 ]

@@ -4,7 +4,7 @@
     api-level="22"
     density="xxxhdpi"
     format="7"
-    timestamp="3920784396224" >
+    timestamp="17172423929613" >
 
     <task
         name="javac"
@@ -20,22 +20,12 @@
         duration="0" />
 
     <artifact
-        location="C:\Users\lipengcheng\Downloads\farmwork\app\build\intermediates\res\resources-debug.ap_"
-        type="RESOURCES" />
+        location="G:\HX-APP\farmwork\farmwork\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
 
-    <build timestamp="3355819268060" >
+    <build timestamp="19946449902454" >
         <artifact
-            location="C:\Users\lipengcheng\Downloads\farmwork\app\build\outputs\apk\app-debug.apk"
-            type="MAIN" />
-    </build>
-    <build timestamp="3903347501002" >
-        <artifact
-            location="C:\Users\lipengcheng\Downloads\farmwork\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
-            type="DEX" />
-    </build>
-    <build timestamp="3920784396224" >
-        <artifact
-            location="C:\Users\lipengcheng\Downloads\farmwork\app\build\intermediates\res\resources-debug.ap_"
+            location="G:\HX-APP\farmwork\farmwork\app\build\intermediates\res\resources-debug.ap_"
             type="RESOURCES" />
     </build>
 

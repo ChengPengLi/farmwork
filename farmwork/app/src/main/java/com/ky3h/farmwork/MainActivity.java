@@ -3,6 +3,7 @@ package com.ky3h.farmwork;
 
 import android.content.Context;
 import android.graphics.Color;
+import android.hardware.fingerprint.FingerprintManager;
 import android.os.Build;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -55,20 +56,6 @@ public class MainActivity extends BaseActivity {
     @Override
     public void setContentView() {
         setContentView(R.layout.activity_main);
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-//            //透明状态栏
-//            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-//            //透明导航栏
-//            getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
-////            SystemBarTintManager tintManager = new SystemBarTintManager(this);
-////            tintManager.setStatusBarTintEnabled(true);
-////            tintManager.setNavigationBarTintEnabled(true);
-////
-////            // 自定义颜色
-////            tintManager.setTintColor(Color.parseColor("#ffffff"));
-//        }
-
-
     }
 
     @Override

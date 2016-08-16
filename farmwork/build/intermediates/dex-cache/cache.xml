@@ -1,3 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
+    <item
+        jar="G:\HX-APP\farmwork\farmwork\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f6546569d4168bb0d56cca00c8e9d42f5faaabc6">
+        <dex dex="G:\HX-APP\farmwork\farmwork\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_f5fc1383cfca5d8bc2361e3a82c4d6aa7d6fa63b\classes.dex" />
+    </item>
+
+</items>
