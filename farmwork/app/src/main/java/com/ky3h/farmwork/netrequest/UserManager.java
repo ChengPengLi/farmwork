@@ -5,6 +5,7 @@ import android.os.Message;
 import android.text.TextUtils;
 import android.util.Log;
 
+import com.ky3h.farmwork.application.AppConfig;
 import com.ky3h.farmwork.bean.User;
 import com.ky3h.farmwork.utils.Constants;
 import com.ky3h.farmwork.utils.NoHttpUtil;
@@ -58,76 +59,77 @@ public class UserManager {
                 if (what == NOHTTP_WHAT_LOGIN) {
                     String result = response.get();
 
-                        JSONObject jo = getReturnJSONObject(result);
+                    JSONObject jo = getReturnJSONObject(result);
 
-                        if (jo != null) {
-                            loginedUser = new User();
-                            try {
-                                int status = jo.getInt("status");
-                                JSONObject data = jo.getJSONObject("data");
-                                String token = data.getString("token");
-                                String JSessionId = data
-                                        .getString("JSESSIONID");
+                    if (jo != null) {
+                        loginedUser = new User();
+                        try {
+                            int status = jo.getInt("status");
+                            JSONObject data = jo.getJSONObject("data");
+                            String token = data.getString("token");
+                            String JSessionId = data
+                                    .getString("JSESSIONID");
 
-                                String cookie = "token=" + token
-                                        + ";JSESSIONID=" + JSessionId;
-                                loginedUser.setToken(token);
-                                loginedUser.setJSESSIONID(JSessionId);
+                            String cookie = "token=" + token
+                                    + ";JSESSIONID=" + JSessionId;
+                            AppConfig.getInstance().putString("Cookie", cookie);
+                            loginedUser.setToken(token);
+                            loginedUser.setJSESSIONID(JSessionId);
 
-                                JSONObject member = data
-                                        .getJSONObject("member");
+                            JSONObject member = data
+                                    .getJSONObject("member");
 
-                                loginedUser.setId(member.getInt("id"));
-                                loginedUser.setUserName(member
-                                        .getString("username"));
-                                loginedUser.setName(getValue(member
-                                        .getString("name")));
-                                loginedUser.setGender(getValue(member
-                                        .getString("gender")));
-                                loginedUser.setAddress(getValue(member
-                                        .getString("address")));
-                                loginedUser.setPhone(getValue(member
-                                        .getString("phone")));
-                                loginedUser.setMemberImage(getValue(member
-                                        .getString("memberImage")));
-                                loginedUser.setIdentityType(getValue(member
-                                        .getString("identityType")));
-                                loginedUser.setIdNumber(getValue(member
-                                        .getString("idNumber")));
-                                loginedUser.setIsMedicare(getValue(member
-                                        .getString("isMedicare")));
-                                loginedUser.setBirthDate(getValue(member
-                                        .getString("birthday")));
+                            loginedUser.setId(member.getInt("id"));
+                            loginedUser.setUserName(member
+                                    .getString("username"));
+                            loginedUser.setName(getValue(member
+                                    .getString("name")));
+                            loginedUser.setGender(getValue(member
+                                    .getString("gender")));
+                            loginedUser.setAddress(getValue(member
+                                    .getString("address")));
+                            loginedUser.setPhone(getValue(member
+                                    .getString("phone")));
+                            loginedUser.setMemberImage(getValue(member
+                                    .getString("memberImage")));
+                            loginedUser.setIdentityType(getValue(member
+                                    .getString("identityType")));
+                            loginedUser.setIdNumber(getValue(member
+                                    .getString("idNumber")));
+                            loginedUser.setIsMedicare(getValue(member
+                                    .getString("isMedicare")));
+                            loginedUser.setBirthDate(getValue(member
+                                    .getString("birthday")));
 
-                                JSONArray memberChildArray = member
-                                        .getJSONArray("mengberchild");
+                            JSONArray memberChildArray = member
+                                    .getJSONArray("mengberchild");
 
-                                for (int i = 0; i < memberChildArray.length(); i++) {
-                                    String mobile = memberChildArray
-                                            .getJSONObject(i).getString(
-                                                    "mobile");
-                                    // loginedUser.setUserName(mobile);
+                            for (int i = 0; i < memberChildArray.length(); i++) {
+                                String mobile = memberChildArray
+                                        .getJSONObject(i).getString(
+                                                "mobile");
+                                // loginedUser.setUserName(mobile);
 
-                                    if (!TextUtils.isEmpty(mobile)
-                                            && mobile.equals(username)) {
-                                        loginedUser
-                                                .setMemberChildId(memberChildArray
-                                                        .getJSONObject(i)
-                                                        .getInt("id"));
-                                    }
+                                if (!TextUtils.isEmpty(mobile)
+                                        && mobile.equals(username)) {
+                                    loginedUser
+                                            .setMemberChildId(memberChildArray
+                                                    .getJSONObject(i)
+                                                    .getInt("id"));
                                 }
+                            }
 
 //								mHandler.obtainMessage(LOGIN_SUCCESS)
 //										.sendToTarget();
-                                Message message = Message.obtain();
-                                message.what = UserManager.LOGIN_SUCCESS;
-                                message.arg1 = status;
-                                message.obj = data;
-                                handler.sendMessage(message);
-                            } catch (JSONException e) {
-                                e.printStackTrace();
-                            }
+                            Message message = Message.obtain();
+                            message.what = UserManager.LOGIN_SUCCESS;
+                            message.arg1 = status;
+                            message.obj = data;
+                            handler.sendMessage(message);
+                        } catch (JSONException e) {
+                            e.printStackTrace();
                         }
+                    }
 
                 }
             }
@@ -143,12 +145,14 @@ public class UserManager {
             }
         });
     }
+
     private String getValue(String string) {
         if (!TextUtils.isEmpty(string) && !"null".equals(string)) {
             return string;
         }
         return null;
     }
+
     protected final JSONObject getReturnJSONObject(String response) {
         try {
             JSONObject jo = new JSONObject(response);

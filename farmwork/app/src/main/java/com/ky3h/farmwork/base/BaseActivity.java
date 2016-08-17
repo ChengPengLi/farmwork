@@ -20,6 +20,7 @@ import com.hyphenate.exceptions.HyphenateException;
 import com.hyphenate.util.NetUtils;
 import com.ky3h.farmwork.Regist;
 import com.ky3h.farmwork.utils.SystemBarTintManager;
+import com.ky3h.farmwork.widget.LoadingDialog;
 
 import java.util.Iterator;
 import java.util.List;
@@ -28,6 +29,7 @@ import java.util.List;
  * Created by lipengcheng on 2016/6/1.
  */
 public abstract class BaseActivity extends AppCompatActivity implements View.OnClickListener {
+    private LoadingDialog loadingDialog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -80,58 +82,26 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
     }
 
 
-//    private class MyConnectionListener implements EMConnectionListener {
-//        @Override
-//        public void onConnected() {
-//        }
-//
-//        @Override
-//        public void onDisconnected(final int error) {
-//            runOnUiThread(new Runnable() {
-//
-//                @Override
-//                public void run() {
-//                    if (error == EMError.USER_REMOVED) {
-//                        Toast.makeText(BaseActivity.this, "账号不存在", Toast.LENGTH_SHORT).show();
-//                    } else if (error == EMError.USER_LOGIN_ANOTHER_DEVICE) {
-//                        Toast.makeText(BaseActivity.this, "账号在其他设备登录", Toast.LENGTH_SHORT).show();
-//                    } else {
-//                        if (NetUtils.hasNetwork(BaseActivity.this)) {
-//                            Toast.makeText(BaseActivity.this, "连接不上服务器", Toast.LENGTH_SHORT).show();
-//                        } else {
-//                            Toast.makeText(BaseActivity.this, "网络不可用", Toast.LENGTH_SHORT).show();
-//                        }
-//
-//                    }
-//                }
-//            });
-//        }
-//    }
+    protected void showLoadingDialog() {
+        if (loadingDialog == null) {
+            loadingDialog = new LoadingDialog(this);
+        }
+        if (!loadingDialog.isShowing()) {
+            loadingDialog.show();
+        }
+    }
 
+    protected void dismissLoadingDialog() {
+        if (loadingDialog != null) {
+            loadingDialog.dismiss();
+        }
+    }
     /**
      * 设置布局文件
      */
     public abstract void setContentView();
 
-//    private String getAppName(int pID) {
-//        String processName = null;
-//        ActivityManager am = (ActivityManager) this.getSystemService(ACTIVITY_SERVICE);
-//        List l = am.getRunningAppProcesses();
-//        Iterator i = l.iterator();
-//        PackageManager pm = this.getPackageManager();
-//        while (i.hasNext()) {
-//            ActivityManager.RunningAppProcessInfo info = (ActivityManager.RunningAppProcessInfo) (i.next());
-//            try {
-//                if (info.pid == pID) {
-//                    processName = info.processName;
-//                    return processName;
-//                }
-//            } catch (Exception e) {
-//                // Log.d("Process", "Error>> :"+ e.toString());
-//            }
-//        }
-//        return processName;
-//    }
+
 
     /**
      * 实例化之前的操作可以进行逻辑处理

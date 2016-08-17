@@ -35,6 +35,7 @@ public class Login extends BaseActivity {
                 passWordNumber = password.getText().toString();
                 requestQueue = NoHttpUtil.getRequestQueue();
                 manager.LoginFromNohttp(accountNumber, passWordNumber, requestQueue);
+                showLoadingDialog();
                 break;
             case R.id.btn_reg:
                 Intent intent1 = new Intent(Login.this, Regist.class);
@@ -77,13 +78,18 @@ public class Login extends BaseActivity {
             super.handleMessage(msg);
             switch (msg.what) {
                 case UserManager.LOGIN_NETWORK_ERROR:
+                    dismissLoadingDialog();
                     showShortToast("您的网络出现问题，请重新尝试。。");
                     break;
                 case UserManager.LOGIN_FAIL:
+                    dismissLoadingDialog();
                     showShortToast("抱歉，登录失败，请重试");
                     break;
                 case UserManager.LOGIN_SUCCESS:
-                    showShortToast("抱歉，登录失败，请重试");
+                    if (msg.arg1 == 100) {
+                        dismissLoadingDialog();
+                    }
+                    Toast.makeText(Login.this, "登录成功", Toast.LENGTH_SHORT).show();
                     break;
 
             }

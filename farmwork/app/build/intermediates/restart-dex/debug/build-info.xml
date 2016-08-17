@@ -4,7 +4,7 @@
     api-level="22"
     density="xxxhdpi"
     format="7"
-    timestamp="17172423929613" >
+    timestamp="24982702133513" >
 
     <task
         name="javac"
@@ -19,14 +19,11 @@
         name="verifier"
         duration="0" />
 
-    <artifact
-        location="G:\HX-APP\farmwork\farmwork\app\build\outputs\apk\app-debug.apk"
-        type="MAIN" />
-
-    <build timestamp="19946449902454" >
+    <build timestamp="24478152731195" >
         <artifact
-            location="G:\HX-APP\farmwork\farmwork\app\build\intermediates\res\resources-debug.ap_"
-            type="RESOURCES" />
+            location="G:\HX-APP\farmwork\farmwork\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
     </build>
+    <build timestamp="24982702133513" />
 
 </instant-run>
