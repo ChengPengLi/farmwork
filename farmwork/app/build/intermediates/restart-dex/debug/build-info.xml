@@ -4,26 +4,43 @@
     api-level="22"
     density="xxxhdpi"
     format="7"
-    timestamp="24982702133513" >
+    timestamp="27639975341808"
+    verifier="FIELD_TYPE_CHANGE" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="284" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="19" />
     <task
         name="verifier"
-        duration="0" />
+        duration="4" />
 
-    <build timestamp="24478152731195" >
+    <artifact
+        location="G:\HX-APP\farmwork\farmwork\app\build\intermediates\res\resources-debug.ap_"
+        type="RESOURCES" />
+    <artifact
+        location="G:\HX-APP\farmwork\farmwork\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
+        type="DEX" />
+
+    <build timestamp="26098472784359" >
         <artifact
             location="G:\HX-APP\farmwork\farmwork\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
-    <build timestamp="24982702133513" />
+    <build
+        timestamp="27639975341808"
+        verifier="FIELD_TYPE_CHANGE" >
+        <artifact
+            location="G:\HX-APP\farmwork\farmwork\app\build\intermediates\res\resources-debug.ap_"
+            type="RESOURCES" />
+        <artifact
+            location="G:\HX-APP\farmwork\farmwork\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
+            type="DEX" />
+    </build>
 
 </instant-run>

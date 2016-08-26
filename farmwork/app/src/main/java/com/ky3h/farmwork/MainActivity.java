@@ -2,6 +2,7 @@ package com.ky3h.farmwork;
 
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.hardware.fingerprint.FingerprintManager;
 import android.os.Build;
@@ -18,23 +19,36 @@ import android.support.v7.app.AppCompatDelegate;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
 import com.ky3h.farmwork.adapter.MyAdapter;
 import com.ky3h.farmwork.adapter.MyRecyclearAdapter;
 import com.ky3h.farmwork.base.BaseActivity;
+import com.ky3h.farmwork.bean.User;
+import com.ky3h.farmwork.netrequest.UserManager;
+import com.ky3h.farmwork.utils.NoHttpUtil;
 import com.ky3h.farmwork.utils.SystemBarTintManager;
+import com.yolanda.nohttp.NoHttp;
+import com.yolanda.nohttp.rest.CacheMode;
+import com.yolanda.nohttp.rest.OnResponseListener;
+import com.yolanda.nohttp.rest.Request;
+import com.yolanda.nohttp.rest.RequestQueue;
+import com.yolanda.nohttp.rest.Response;
 
 import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MainActivity extends BaseActivity {
     private Toolbar toolbar;
@@ -46,6 +60,9 @@ public class MainActivity extends BaseActivity {
     private List<Fragment> fragmentList;
     private List<String> titles;
     private DrawerLayout drawerLayout;
+    private CircleImageView user_photo;
+    private TextView user_name;
+    private NavigationView navigationView;
 
     @Override
     public void touchListener(View v) {
@@ -73,10 +90,12 @@ public class MainActivity extends BaseActivity {
         ab.setDisplayHomeAsUpEnabled(true);
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView = (NavigationView) findViewById(R.id.nav_view);
         if (navigationView != null) {
             setupDrawerContent(navigationView);
+
         }
+
         titles = new ArrayList<>();
         titles.add("首页");
         titles.add("分类");
@@ -118,6 +137,36 @@ public class MainActivity extends BaseActivity {
         switch (item.getItemId()) {
             case android.R.id.home:
                 drawerLayout.openDrawer(GravityCompat.START);
+                View view = navigationView.getHeaderView(0);
+                user_photo = (CircleImageView) view.findViewById(R.id.drawer_userImage);
+                user_name = (TextView) view.findViewById(R.id.drawer_userName);
+                User user = UserManager.getLoginedUser();
+                RequestQueue requestQueue = NoHttpUtil.getRequestQueue();
+                Request request = NoHttp.createImageRequest(user.getMemberImage());
+                request.setCacheMode(CacheMode.NONE_CACHE_REQUEST_NETWORK);
+                requestQueue.add(1, request, new OnResponseListener() {
+                    @Override
+                    public void onStart(int i) {
+
+                    }
+
+                    @Override
+                    public void onSucceed(int i, Response response) {
+                        Bitmap bitmap = (Bitmap) response.get();
+                        user_photo.setImageBitmap(bitmap);
+                    }
+
+                    @Override
+                    public void onFailed(int i, String s, Object o, Exception e, int i1, long l) {
+
+                    }
+
+                    @Override
+                    public void onFinish(int i) {
+
+                    }
+                });
+                user_name.setText(user.getName());
                 break;
             case R.id.menu_night_mode_system:
                 setNightMode(AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM);

@@ -4,14 +4,17 @@ import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.ky3h.farmwork.application.Application;
 import com.ky3h.farmwork.base.BaseActivity;
 import com.ky3h.farmwork.netrequest.UserManager;
 import com.ky3h.farmwork.utils.NoHttpUtil;
+import com.ky3h.farmwork.utils.SharedUtils;
 import com.yolanda.nohttp.rest.RequestQueue;
 
 /**
@@ -31,6 +34,16 @@ public class Login extends BaseActivity {
     public void touchListener(View v) {
         switch (v.getId()) {
             case R.id.btn_login:
+                if (account.getText().toString().length() < 11) {
+                    Toast.makeText(Login.this, "手机号格式错误，请正确输入您的手机号码",
+                            Toast.LENGTH_SHORT).show();
+                    return;
+                }
+                if (password.getText().toString().length() < 6) {
+                    Toast.makeText(Login.this, "请输入6-20位字符，可使用字母，数字或字符组合！",
+                            Toast.LENGTH_SHORT).show();
+                    return;
+                }
                 accountNumber = account.getText().toString();
                 passWordNumber = password.getText().toString();
                 requestQueue = NoHttpUtil.getRequestQueue();
@@ -50,6 +63,7 @@ public class Login extends BaseActivity {
 
     @Override
     public void setContentView() {
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.login);
     }
 
@@ -72,7 +86,7 @@ public class Login extends BaseActivity {
 
     }
 
-    private Handler handler = new Handler() {
+    private final Handler handler = new Handler() {
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
@@ -84,12 +98,22 @@ public class Login extends BaseActivity {
                 case UserManager.LOGIN_FAIL:
                     dismissLoadingDialog();
                     showShortToast("抱歉，登录失败，请重试");
+
                     break;
                 case UserManager.LOGIN_SUCCESS:
                     if (msg.arg1 == 100) {
                         dismissLoadingDialog();
+                        Toast.makeText(Login.this, "登录成功", Toast.LENGTH_SHORT).show();
+                        SharedUtils.putString("username", accountNumber, Login.this);
+                        SharedUtils.putString("username", passWordNumber, Login.this);
+                        Intent intent = new Intent(Login.this, MainActivity.class);
+                        startActivity(intent);
+                        finish();
+                    } else {
+                        Toast.makeText(Login.this, msg.obj.toString(),
+                                Toast.LENGTH_SHORT).show();
                     }
-                    Toast.makeText(Login.this, "登录成功", Toast.LENGTH_SHORT).show();
+
                     break;
 
             }

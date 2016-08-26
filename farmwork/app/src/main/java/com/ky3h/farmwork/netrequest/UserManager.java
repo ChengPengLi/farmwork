@@ -31,10 +31,13 @@ public class UserManager {
     public static final int LOGIN_FAIL = 0;
     public static final int LOGIN_SUCCESS = 1;
     public static final int LOGIN_NETWORK_ERROR = 2;
-    private User loginedUser;
+    private static User loginedUser;
 
     public UserManager(Handler handler) {
         this.handler = handler;
+    }
+    public static User getLoginedUser() {
+        return loginedUser;
     }
 
     public void LoginFromNohttp(final String username, String password, RequestQueue requestQueue) {
@@ -58,7 +61,7 @@ public class UserManager {
             public void onSucceed(int what, Response<String> response) {
                 if (what == NOHTTP_WHAT_LOGIN) {
                     String result = response.get();
-
+                    Log.i("111", result);
                     JSONObject jo = getReturnJSONObject(result);
 
                     if (jo != null) {
@@ -126,9 +129,13 @@ public class UserManager {
                             message.arg1 = status;
                             message.obj = data;
                             handler.sendMessage(message);
+
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
+                    } else {
+
+                        handler.obtainMessage(LOGIN_FAIL).sendToTarget();
                     }
 
                 }
