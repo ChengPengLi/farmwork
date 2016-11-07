@@ -1,46 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="armeabi-v7a,armeabi"
-    api-level="22"
-    density="xxxhdpi"
+    abi="x86,armeabi-v7a"
+    api-level="19"
     format="7"
-    timestamp="27639975341808"
-    verifier="FIELD_TYPE_CHANGE" >
+    timestamp="28841186411496" >
 
     <task
         name="javac"
-        duration="284" />
+        duration="0" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="19" />
+        duration="0" />
     <task
         name="verifier"
-        duration="4" />
+        duration="0" />
 
     <artifact
-        location="G:\HX-APP\farmwork\farmwork\app\build\intermediates\res\resources-debug.ap_"
-        type="RESOURCES" />
-    <artifact
-        location="G:\HX-APP\farmwork\farmwork\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
-        type="DEX" />
+        location="G:\HX-APP\farmwork\farmwork\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
 
-    <build timestamp="26098472784359" >
+    <build timestamp="28841186411496" >
         <artifact
             location="G:\HX-APP\farmwork\farmwork\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="27639975341808"
-        verifier="FIELD_TYPE_CHANGE" >
-        <artifact
-            location="G:\HX-APP\farmwork\farmwork\app\build\intermediates\res\resources-debug.ap_"
-            type="RESOURCES" />
-        <artifact
-            location="G:\HX-APP\farmwork\farmwork\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
-            type="DEX" />
     </build>
 
 </instant-run>

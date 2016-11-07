@@ -105,7 +105,7 @@ public class Login extends BaseActivity {
                         dismissLoadingDialog();
                         Toast.makeText(Login.this, "登录成功", Toast.LENGTH_SHORT).show();
                         SharedUtils.putString("username", accountNumber, Login.this);
-                        SharedUtils.putString("username", passWordNumber, Login.this);
+                        SharedUtils.putString("userpass", passWordNumber, Login.this);
                         Intent intent = new Intent(Login.this, MainActivity.class);
                         startActivity(intent);
                         finish();

@@ -1,5 +1,9 @@
 [
     {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\spalsh_image.png",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\spalsh_image.png"
+    },
+    {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_event.png",
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_event.png"
     },
@@ -18,6 +22,14 @@
     {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_done.png",
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_done.png"
+    },
+    {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\splash_icon.png",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\splash_icon.png"
+    },
+    {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\splash.png",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\mipmap-xxhdpi\\splash.png"
     },
     {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi-v4\\ic_discuss.png",

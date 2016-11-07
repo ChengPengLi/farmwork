@@ -4,7 +4,6 @@ package com.ky3h.farmwork;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Color;
-import android.hardware.fingerprint.FingerprintManager;
 import android.os.Build;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -16,34 +15,24 @@ import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatDelegate;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.AttributeSet;
-import android.util.Log;
-import android.view.LayoutInflater;
+import android.telephony.TelephonyManager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.WindowManager;
-import android.widget.ImageView;
-import android.widget.PopupWindow;
 import android.widget.TextView;
 
 import com.ky3h.farmwork.adapter.MyAdapter;
-import com.ky3h.farmwork.adapter.MyRecyclearAdapter;
 import com.ky3h.farmwork.base.BaseActivity;
 import com.ky3h.farmwork.bean.User;
 import com.ky3h.farmwork.netrequest.UserManager;
 import com.ky3h.farmwork.utils.NoHttpUtil;
-import com.ky3h.farmwork.utils.SystemBarTintManager;
 import com.yolanda.nohttp.NoHttp;
 import com.yolanda.nohttp.rest.CacheMode;
 import com.yolanda.nohttp.rest.OnResponseListener;
 import com.yolanda.nohttp.rest.Request;
 import com.yolanda.nohttp.rest.RequestQueue;
 import com.yolanda.nohttp.rest.Response;
-
-import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -131,7 +120,33 @@ public class MainActivity extends BaseActivity {
         getMenuInflater().inflate(R.menu.sample_actions, menu);
         return true;
     }
+  OnResponseListener<Bitmap> lsitner=new OnResponseListener<Bitmap>() {
 
+
+      @Override
+      public void onStart(int what) {
+
+      }
+
+      @Override
+      public void onSucceed(int what, Response<Bitmap> response) {
+          Bitmap bitmap =  response.get();
+          user_photo.setImageBitmap(bitmap);
+      }
+
+      @Override
+      public void onFailed(int i, String s, Object o, Exception e, int i1, long l) {
+
+      }
+
+
+      @Override
+      public void onFinish(int what) {
+
+      }
+
+
+  };
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
@@ -144,28 +159,7 @@ public class MainActivity extends BaseActivity {
                 RequestQueue requestQueue = NoHttpUtil.getRequestQueue();
                 Request request = NoHttp.createImageRequest(user.getMemberImage());
                 request.setCacheMode(CacheMode.NONE_CACHE_REQUEST_NETWORK);
-                requestQueue.add(1, request, new OnResponseListener() {
-                    @Override
-                    public void onStart(int i) {
-
-                    }
-
-                    @Override
-                    public void onSucceed(int i, Response response) {
-                        Bitmap bitmap = (Bitmap) response.get();
-                        user_photo.setImageBitmap(bitmap);
-                    }
-
-                    @Override
-                    public void onFailed(int i, String s, Object o, Exception e, int i1, long l) {
-
-                    }
-
-                    @Override
-                    public void onFinish(int i) {
-
-                    }
-                });
+                requestQueue.add(1, request,lsitner);
                 user_name.setText(user.getName());
                 break;
             case R.id.menu_night_mode_system:
@@ -183,7 +177,7 @@ public class MainActivity extends BaseActivity {
 
         }
         return super.onOptionsItemSelected(item);
-    }
+    }   
 
     private void setupDrawerContent(NavigationView navigationView) {
         navigationView.setNavigationItemSelectedListener(
@@ -203,7 +197,7 @@ public class MainActivity extends BaseActivity {
         if (Build.VERSION.SDK_INT >= 11) {
             recreate();
         }
-    }
+    } 
 
     @Override
     public void afterInitView() {
@@ -213,29 +207,14 @@ public class MainActivity extends BaseActivity {
         fragmentList.add(fragment_mine);
         pager.setAdapter(new MyAdapter(getSupportFragmentManager(), fragmentList, titles));
         pager.setCurrentItem(0);
-
-
         TabLayout tab = (TabLayout) findViewById(R.id.tabs);
+        String number = getUserPhoneNumber();
         tab.setupWithViewPager(pager);
+        showShortToast(number);
     }
 
-    PopupWindow popupWindow;
-
-    public void ShowPop(List list) {
-        if (popupWindow == null) {
-            popupWindow = new PopupWindow();
-            View view = LayoutInflater.from(this).inflate(R.layout.fragment_home, null);
-            RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recyclearView);
-            recyclerView.setAdapter(new MyRecyclearAdapter(this, list));
-            popupWindow.setContentView(view);
-
-        } else {
-            View view = LayoutInflater.from(this).inflate(R.layout.fragment_home, null);
-            RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.recyclearView);
-            recyclerView.setAdapter(new MyRecyclearAdapter(this, list));
-            popupWindow.setContentView(view);
-
-        }
-
-    }
+    private String getUserPhoneNumber() {
+        TelephonyManager telephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
+        return telephonyManager.getLine1Number();
+    };
 }

@@ -16,7 +16,7 @@ public class Fragment_type extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = LayoutInflater.from(getActivity()).inflate(R.layout.fragment_type, container, false);
+        View view = inflater.from(getActivity()).inflate(R.layout.fragment_type, container, false);
 
         return view;
     }

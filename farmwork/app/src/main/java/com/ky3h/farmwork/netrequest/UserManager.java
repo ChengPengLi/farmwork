@@ -32,10 +32,13 @@ public class UserManager {
     public static final int LOGIN_SUCCESS = 1;
     public static final int LOGIN_NETWORK_ERROR = 2;
     private static User loginedUser;
+    private String username;
+    private String password;
 
     public UserManager(Handler handler) {
         this.handler = handler;
     }
+
     public static User getLoginedUser() {
         return loginedUser;
     }
@@ -44,6 +47,8 @@ public class UserManager {
         Request<String> request = NoHttp.createStringRequest(Constants.LOGIN_URL, RequestMethod.POST);
         request.add("username", username);
         request.add("password", password);
+        this.username = username;
+        this.password = password;
         request.setConnectTimeout(NoHttp.getDefaultConnectTimeout());
         request.setReadTimeout(NoHttp.getDefaultReadTimeout());
         request.addHeader("version", "erzhen_android-yh-" + NoHttpUtil.getVersion());
@@ -51,107 +56,110 @@ public class UserManager {
         request.setTag(this);
         // 设置一个tag, 在请求完(失败/成功)时原封不动返回; 多数情况下不需要。
         request.setTag(this);
-        requestQueue.add(NOHTTP_WHAT_LOGIN, request, new OnResponseListener<String>() {
-            @Override
-            public void onStart(int i) {
+        requestQueue.add(NOHTTP_WHAT_LOGIN, request, onResponseListener);
+    }
 
-            }
+    private OnResponseListener<String> onResponseListener = new OnResponseListener<String>() {
+        @SuppressWarnings("unused")
+        @Override
+        public void onSucceed(int what, Response<String> response) {
+            if (what == NOHTTP_WHAT_LOGIN) {
+                String result = response.get();
+                Log.i("111", result);
+                JSONObject jo = getReturnJSONObject(result);
 
-            @Override
-            public void onSucceed(int what, Response<String> response) {
-                if (what == NOHTTP_WHAT_LOGIN) {
-                    String result = response.get();
-                    Log.i("111", result);
-                    JSONObject jo = getReturnJSONObject(result);
+                if (jo != null) {
+                    loginedUser = new User();
+                    try {
+                        int status = jo.getInt("status");
+                        JSONObject data = jo.getJSONObject("data");
+                        String token = data.getString("token");
+                        String JSessionId = data
+                                .getString("JSESSIONID");
 
-                    if (jo != null) {
-                        loginedUser = new User();
-                        try {
-                            int status = jo.getInt("status");
-                            JSONObject data = jo.getJSONObject("data");
-                            String token = data.getString("token");
-                            String JSessionId = data
-                                    .getString("JSESSIONID");
+                        String cookie = "token=" + token
+                                + ";JSESSIONID=" + JSessionId;
+                        AppConfig.getInstance().putString("Cookie", cookie);
+                        loginedUser.setToken(token);
+                        loginedUser.setJSESSIONID(JSessionId);
 
-                            String cookie = "token=" + token
-                                    + ";JSESSIONID=" + JSessionId;
-                            AppConfig.getInstance().putString("Cookie", cookie);
-                            loginedUser.setToken(token);
-                            loginedUser.setJSESSIONID(JSessionId);
+                        JSONObject member = data
+                                .getJSONObject("member");
 
-                            JSONObject member = data
-                                    .getJSONObject("member");
+                        loginedUser.setId(member.getInt("id"));
+                        loginedUser.setUserName(member
+                                .getString("username"));
+                        loginedUser.setName(getValue(member
+                                .getString("name")));
+                        loginedUser.setGender(getValue(member
+                                .getString("gender")));
+                        loginedUser.setAddress(getValue(member
+                                .getString("address")));
+                        loginedUser.setPhone(getValue(member
+                                .getString("phone")));
+                        loginedUser.setMemberImage(getValue(member
+                                .getString("memberImage")));
+                        loginedUser.setIdentityType(getValue(member
+                                .getString("identityType")));
+                        loginedUser.setIdNumber(getValue(member
+                                .getString("idNumber")));
+                        loginedUser.setIsMedicare(getValue(member
+                                .getString("isMedicare")));
+                        loginedUser.setBirthDate(getValue(member
+                                .getString("birthday")));
 
-                            loginedUser.setId(member.getInt("id"));
-                            loginedUser.setUserName(member
-                                    .getString("username"));
-                            loginedUser.setName(getValue(member
-                                    .getString("name")));
-                            loginedUser.setGender(getValue(member
-                                    .getString("gender")));
-                            loginedUser.setAddress(getValue(member
-                                    .getString("address")));
-                            loginedUser.setPhone(getValue(member
-                                    .getString("phone")));
-                            loginedUser.setMemberImage(getValue(member
-                                    .getString("memberImage")));
-                            loginedUser.setIdentityType(getValue(member
-                                    .getString("identityType")));
-                            loginedUser.setIdNumber(getValue(member
-                                    .getString("idNumber")));
-                            loginedUser.setIsMedicare(getValue(member
-                                    .getString("isMedicare")));
-                            loginedUser.setBirthDate(getValue(member
-                                    .getString("birthday")));
+                        JSONArray memberChildArray = member
+                                .getJSONArray("mengberchild");
 
-                            JSONArray memberChildArray = member
-                                    .getJSONArray("mengberchild");
+                        for (int i = 0; i < memberChildArray.length(); i++) {
+                            String mobile = memberChildArray
+                                    .getJSONObject(i).getString(
+                                            "mobile");
+                            // loginedUser.setUserName(mobile);
 
-                            for (int i = 0; i < memberChildArray.length(); i++) {
-                                String mobile = memberChildArray
-                                        .getJSONObject(i).getString(
-                                                "mobile");
-                                // loginedUser.setUserName(mobile);
-
-                                if (!TextUtils.isEmpty(mobile)
-                                        && mobile.equals(username)) {
-                                    loginedUser
-                                            .setMemberChildId(memberChildArray
-                                                    .getJSONObject(i)
-                                                    .getInt("id"));
-                                }
+                            if (!TextUtils.isEmpty(mobile)
+                                    && mobile.equals(username)) {
+                                loginedUser
+                                        .setMemberChildId(memberChildArray
+                                                .getJSONObject(i)
+                                                .getInt("id"));
                             }
+                        }
 
 //								mHandler.obtainMessage(LOGIN_SUCCESS)
 //										.sendToTarget();
-                            Message message = Message.obtain();
-                            message.what = UserManager.LOGIN_SUCCESS;
-                            message.arg1 = status;
-                            message.obj = data;
-                            handler.sendMessage(message);
+                        Message message = Message.obtain();
+                        message.what = UserManager.LOGIN_SUCCESS;
+                        message.arg1 = status;
+                        message.obj = data;
+                        handler.sendMessage(message);
 
-                        } catch (JSONException e) {
-                            e.printStackTrace();
-                        }
-                    } else {
-
-                        handler.obtainMessage(LOGIN_FAIL).sendToTarget();
+                    } catch (JSONException e) {
+                        e.printStackTrace();
                     }
+                } else {
 
+                    handler.obtainMessage(LOGIN_FAIL).sendToTarget();
                 }
-            }
-
-            @Override
-            public void onFailed(int i, String s, Object o, Exception e, int i1, long l) {
-                handler.obtainMessage(LOGIN_NETWORK_ERROR).sendToTarget();
-            }
-
-            @Override
-            public void onFinish(int i) {
 
             }
-        });
-    }
+        }
+        @Override
+        public void onStart(int i) {
+
+        }
+        @Override
+        public void onFailed(int i, String s, Object o, Exception e, int i1, long l) {
+
+        }
+
+        @Override
+        public void onFinish(int i) {
+
+        }
+
+
+    };
 
     private String getValue(String string) {
         if (!TextUtils.isEmpty(string) && !"null".equals(string)) {

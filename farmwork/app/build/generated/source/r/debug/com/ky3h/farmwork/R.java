@@ -2435,7 +2435,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0c0057;
         public static final int action_mode_bar_stub=0x7f0c0056;
         public static final int action_mode_close_button=0x7f0c003c;
-        public static final int action_night=0x7f0c00a6;
+        public static final int action_night=0x7f0c00a9;
         public static final int activity_chooser_view_content=0x7f0c003d;
         public static final int alertTitle=0x7f0c0049;
         public static final int always=0x7f0c0033;
@@ -2452,6 +2452,7 @@ containing a value of this type.
         public static final int center_horizontal=0x7f0c001f;
         public static final int center_vertical=0x7f0c0020;
         public static final int checkbox=0x7f0c0052;
+        public static final int chongxin=0x7f0c00a4;
         public static final int chronometer=0x7f0c0093;
         public static final int clip_horizontal=0x7f0c002c;
         public static final int clip_vertical=0x7f0c002d;
@@ -2493,6 +2494,8 @@ containing a value of this type.
         public static final int icon=0x7f0c0042;
         public static final int ifRoom=0x7f0c0035;
         public static final int image=0x7f0c003f;
+        public static final int imageView=0x7f0c00a2;
+        public static final int imageView2=0x7f0c00a3;
         public static final int info=0x7f0c0097;
         public static final int item_touch_helper_previous_elevation=0x7f0c0005;
         public static final int left=0x7f0c0023;
@@ -2502,17 +2505,17 @@ containing a value of this type.
         public static final int list_item=0x7f0c0041;
         public static final int main_content=0x7f0c007e;
         public static final int media_actions=0x7f0c008f;
-        public static final int menu_night_mode_auto=0x7f0c00aa;
-        public static final int menu_night_mode_day=0x7f0c00a8;
-        public static final int menu_night_mode_night=0x7f0c00a9;
-        public static final int menu_night_mode_system=0x7f0c00a7;
+        public static final int menu_night_mode_auto=0x7f0c00ad;
+        public static final int menu_night_mode_day=0x7f0c00ab;
+        public static final int menu_night_mode_night=0x7f0c00ac;
+        public static final int menu_night_mode_system=0x7f0c00aa;
         public static final int middle=0x7f0c0032;
         public static final int mini=0x7f0c0030;
         public static final int multiply=0x7f0c0027;
-        public static final int nav_discussion=0x7f0c00a5;
-        public static final int nav_friends=0x7f0c00a4;
-        public static final int nav_home=0x7f0c00a2;
-        public static final int nav_messages=0x7f0c00a3;
+        public static final int nav_discussion=0x7f0c00a8;
+        public static final int nav_friends=0x7f0c00a7;
+        public static final int nav_home=0x7f0c00a5;
+        public static final int nav_messages=0x7f0c00a6;
         public static final int nav_view=0x7f0c006a;
         public static final int navigation_header_container=0x7f0c006f;
         public static final int never=0x7f0c0036;
@@ -2661,7 +2664,8 @@ containing a value of this type.
         public static final int select_dialog_item_material=0x7f040039;
         public static final int select_dialog_multichoice_material=0x7f04003a;
         public static final int select_dialog_singlechoice_material=0x7f04003b;
-        public static final int support_simple_spinner_dropdown_item=0x7f04003c;
+        public static final int splash_activity=0x7f04003c;
+        public static final int support_simple_spinner_dropdown_item=0x7f04003d;
     }
     public static final class menu {
         public static final int drawer_view=0x7f0d0000;
@@ -2681,7 +2685,10 @@ containing a value of this type.
         public static final int ic_headset=0x7f03000a;
         public static final int ic_launcher=0x7f03000b;
         public static final int ic_menu=0x7f03000c;
-        public static final int spinner_white_72=0x7f03000d;
+        public static final int spalsh_image=0x7f03000d;
+        public static final int spinner_white_72=0x7f03000e;
+        public static final int splash=0x7f03000f;
+        public static final int splash_icon=0x7f030010;
     }
     public static final class string {
         public static final int Add_a_button_was_clicked=0x7f060014;
