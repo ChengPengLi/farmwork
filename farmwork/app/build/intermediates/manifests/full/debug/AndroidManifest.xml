@@ -37,6 +37,8 @@
         <activity android:name="com.ky3h.farmwork.MainActivity" />
         <activity android:name="com.ky3h.farmwork.Regist" />
         <activity android:name="com.ky3h.farmwork.GoodInfo" />
+        <activity android:name="com.ky3h.farmwork.OneSayActivity" />
+        <activity android:name="com.ky3h.farmwork.BianShiActivity" />
     </application>
 
 </manifest>

@@ -4,16 +4,20 @@
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\layout\\fragment_home_item.xml"
     },
     {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layput_one_say.xml",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\layout\\layput_one_say.xml"
+    },
+    {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
-        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
-        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_search_view.xml"
-    },
-    {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_search_view.xml"
     },
     {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\goodinfo.xml",
@@ -36,12 +40,12 @@
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout\\design_navigation_menu_item.xml"
     },
     {
-        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
-        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout\\design_layout_tab_text.xml"
-    },
-    {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_title_item.xml",
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_text.xml",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout\\design_layout_tab_text.xml"
     },
     {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_part_time.xml",
@@ -60,12 +64,16 @@
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\layout\\fragment_home.xml"
     },
     {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout\\design_navigation_item.xml"
+    },
+    {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout\\design_bottom_sheet_dialog.xml"
     },
     {
-        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item.xml",
-        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout\\design_navigation_item.xml"
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_bianshi.xml",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\layout\\activity_bianshi.xml"
     },
     {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
@@ -172,12 +180,12 @@
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\layout\\fragment_mine.xml"
     },
     {
-        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nav_header.xml",
-        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\layout\\nav_header.xml"
-    },
-    {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\notification_media_action.xml"
+    },
+    {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nav_header.xml",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\layout\\nav_header.xml"
     },
     {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",

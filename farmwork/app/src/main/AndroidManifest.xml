@@ -30,6 +30,8 @@
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".Regist"></activity>
         <activity android:name=".GoodInfo"></activity>
+        <activity android:name=".OneSayActivity"></activity>
+        <activity android:name=".BianShiActivity"></activity>
 
 
     </application>

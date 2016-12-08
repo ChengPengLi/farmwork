@@ -15,7 +15,7 @@
             android:id="@+id/tooolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#1c05b1"
+            android:background="#4b4b4d"
             android:fitsSystemWindows="true"
             app:layout_scrollFlags="scroll|enterAlways|snap"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
@@ -25,6 +25,7 @@
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#716f6f"
             app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
     </android.support.design.widget.AppBarLayout>

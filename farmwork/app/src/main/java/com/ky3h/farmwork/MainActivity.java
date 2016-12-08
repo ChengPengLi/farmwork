@@ -1,7 +1,6 @@
 package com.ky3h.farmwork;
 
 
-import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.os.Build;
@@ -16,7 +15,6 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatDelegate;
 import android.support.v7.widget.Toolbar;
-import android.telephony.TelephonyManager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -208,13 +206,8 @@ public class MainActivity extends BaseActivity {
         pager.setAdapter(new MyAdapter(getSupportFragmentManager(), fragmentList, titles));
         pager.setCurrentItem(0);
         TabLayout tab = (TabLayout) findViewById(R.id.tabs);
-        String number = getUserPhoneNumber();
         tab.setupWithViewPager(pager);
-        showShortToast(number);
+
     }
 
-    private String getUserPhoneNumber() {
-        TelephonyManager telephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
-        return telephonyManager.getLine1Number();
-    };
 }

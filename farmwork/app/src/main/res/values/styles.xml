@@ -33,4 +33,11 @@
         <item name="android:backgroundDimEnabled">true</item>
         <!-- 设置屏幕变暗 -->
     </style>
+    <style name="bianshi_zi_img_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">0</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center|center_horizontal</item>
+    </style>
 </resources>

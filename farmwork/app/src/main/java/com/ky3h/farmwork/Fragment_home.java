@@ -40,7 +40,7 @@ public class Fragment_home extends Fragment {
         recyclerView = (RecyclerView) view.findViewById(R.id.recyclearView);
 //        recyclerView.setLayoutManager(new StaggeredGridLayoutManager(2, StaggeredGridLayoutManager.VERTICAL));
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        recyclerView.addItemDecoration(new RecycleViewDivider(getActivity(), LinearLayoutManager.HORIZONTAL, 6, Color.BLACK));
+        recyclerView.addItemDecoration(new RecycleViewDivider(getActivity(), LinearLayoutManager.HORIZONTAL, 6, Color.WHITE));
         recyclerView.setHasFixedSize(true);
 
 
