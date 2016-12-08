@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@drawable/wenyin_back"
+        android:orientation="vertical"
+        android:weightSum="10" >
+
+        <ImageView
+            android:id="@+id/bianshi_main_img"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="5.5"
+            android:src="@drawable/wenyin_dou1" />
+
+        <ImageView
+            android:id="@+id/bianshi_pinyin_img"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1.5"
+            android:src="@drawable/duo_03" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="3"
+            android:gravity="center" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/wenyin_kuang"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <ImageView
+                    android:id="@+id/zi_img1"
+                    style="@style/bianshi_zi_img_style"
+                    android:src="@drawable/sa_03" />
+
+                <ImageView
+                    android:id="@+id/zi_img2"
+                    style="@style/bianshi_zi_img_style"
+                    android:src="@drawable/sa_05" />
+
+                <ImageView
+                    android:id="@+id/zi_img3"
+                    style="@style/bianshi_zi_img_style"
+                    android:src="@drawable/sa_07" />
+
+                <ImageView
+                    android:id="@+id/zi_img4"
+                    style="@style/bianshi_zi_img_style"
+                    android:src="@drawable/sa_09" />
+
+                <ImageView
+                    android:id="@+id/zi_img5"
+                    style="@style/bianshi_zi_img_style"
+                    android:src="@drawable/sa_11" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout 
+        android:id="@+id/wenyin_bianshi"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:id="@+id/record_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/wenyin_kaishibianshi" />
+        <!-- <ProgressBar
+            android:id="@+id/uploadbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="20px"
+            android:visibility="gone" />
+ -->
+        <ImageView
+            android:id="@+id/bianshi_demo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/wenyin_shipin1" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>
