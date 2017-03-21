@@ -25,7 +25,7 @@
             android:id="@+id/tabs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#716f6f"
+            android:background="#4b4b4d"
             app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
     </android.support.design.widget.AppBarLayout>
@@ -45,7 +45,7 @@
         android:layout_margin="16dp"
         android:src="@mipmap/ic_done"
         app:backgroundTintMode="src_in"
-        app:rippleColor="@color/colorPrimaryDark" />
+        app:rippleColor="#d96b6b" />
 
 
 </android.support.design.widget.CoordinatorLayout>

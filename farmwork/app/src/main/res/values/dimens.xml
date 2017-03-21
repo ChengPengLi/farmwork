@@ -2,4 +2,185 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="dip">3dp</dimen>
+
+    <!-- 定制手机桌面小组件的控件宽高 -->
+    <dimen name="appwidgetWidth">350dp</dimen>
+    <dimen name="appwidgetHeight">500dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- 规范控件宽度与高度 -->
+    <dimen name="dimen0">0dp</dimen>
+    <dimen name="dimen1">1dp</dimen>
+    <dimen name="dimen2">2dp</dimen>
+    <dimen name="dimen3">3dp</dimen>
+    <dimen name="dimen4">4dp</dimen>
+    <dimen name="dimen5">5dp</dimen>
+    <dimen name="dimen6">6dp</dimen>
+    <dimen name="dimen7">7dp</dimen>
+    <dimen name="dimen8">8dp</dimen>
+    <dimen name="dimen9">9dp</dimen>
+    <dimen name="dimen10">10dp</dimen>
+    <dimen name="dimen11">11dp</dimen>
+    <dimen name="dimen12">12dp</dimen>
+    <dimen name="dimen13">13dp</dimen>
+    <dimen name="dimen14">14dp</dimen>
+    <dimen name="dimen15">15dp</dimen>
+    <dimen name="dimen16">16dp</dimen>
+    <dimen name="dimen17">17dp</dimen>
+    <dimen name="dimen18">18dp</dimen>
+    <dimen name="dimen19">19dp</dimen>
+    <dimen name="dimen20">20dp</dimen>
+    <dimen name="dimen21">21dp</dimen>
+    <dimen name="dimen22">22dp</dimen>
+    <dimen name="dimen23">23dp</dimen>
+    <dimen name="dimen24">24dp</dimen>
+    <dimen name="dimen25">25dp</dimen>
+    <dimen name="dimen26">26dp</dimen>
+    <dimen name="dimen27">27dp</dimen>
+    <dimen name="dimen28">28dp</dimen>
+    <dimen name="dimen29">29dp</dimen>
+    <dimen name="dimen30">30dp</dimen>
+    <dimen name="dimen32">32dp</dimen>
+    <dimen name="dimen34">34dp</dimen>
+    <dimen name="dimen35">35dp</dimen>
+    <dimen name="dimen36">36dp</dimen>
+    <dimen name="dimen37">37dp</dimen>
+    <dimen name="dimen38">38dp</dimen>
+    <dimen name="dimen40">40dp</dimen>
+    <dimen name="dimen41">41dp</dimen>
+    <dimen name="dimen42">42dp</dimen>
+    <dimen name="dimen44">44dp</dimen>
+    <dimen name="dimen45">45dp</dimen>
+    <dimen name="dimen46">46dp</dimen>
+    <dimen name="dimen48">48dp</dimen>
+    <dimen name="dimen49">49dp</dimen>
+    <dimen name="dimen50">50dp</dimen>
+    <dimen name="dimen51">51dp</dimen>
+    <dimen name="dimen53">53dp</dimen>
+    <dimen name="dimen54">54dp</dimen>
+    <dimen name="dimen55">55dp</dimen>
+    <dimen name="dimen56">56dp</dimen>
+    <dimen name="dimen58">58dp</dimen>
+    <dimen name="dimen59">59dp</dimen>
+    <dimen name="dimen60">60dp</dimen>
+    <dimen name="dimen62">62dp</dimen>
+    <dimen name="dimen64">64dp</dimen>
+    <dimen name="dimen68">68dp</dimen>
+    <dimen name="dimen70">70dp</dimen>
+    <dimen name="dimen72">72dp</dimen>
+    <dimen name="dimen75">75dp</dimen>
+    <dimen name="dimen76">76dp</dimen>
+    <dimen name="dimen78">78dp</dimen>
+    <dimen name="dimen80">80dp</dimen>
+    <dimen name="dimen82">82dp</dimen>
+    <dimen name="dimen84">84dp</dimen>
+    <dimen name="dimen85">85dp</dimen>
+    <dimen name="dimen86">86dp</dimen>
+    <dimen name="dimen87">87dp</dimen>
+    <dimen name="dimen90">90dp</dimen>
+    <dimen name="dimen91">91dp</dimen>
+    <dimen name="dimen92">92dp</dimen>
+    <dimen name="dimen96">96dp</dimen>
+    <dimen name="dimen100">100dp</dimen>
+    <dimen name="dimen102">102dp</dimen>
+    <dimen name="dimen106">106dp</dimen>
+    <dimen name="dimen110">110dp</dimen>
+    <dimen name="dimen114">114dp</dimen>
+    <dimen name="dimen116">116dp</dimen>
+    <dimen name="dimen118">118dp</dimen>
+    <dimen name="dimen120">120dp</dimen>
+    <dimen name="dimen124">124dp</dimen>
+    <dimen name="dimen125">125dp</dimen>
+    <dimen name="dimen128">128dp</dimen>
+    <dimen name="dimen130">130dp</dimen>
+    <dimen name="dimen134">134dp</dimen>
+    <dimen name="dimen140">140dp</dimen>
+    <dimen name="dimen146">146dp</dimen>
+    <dimen name="dimen150">150dp</dimen>
+    <dimen name="dimen152">152dp</dimen>
+    <dimen name="dimen156">156dp</dimen>
+    <dimen name="dimen160">160dp</dimen>
+    <dimen name="dimen165">165dp</dimen>
+    <dimen name="dimen170">170dp</dimen>
+    <dimen name="dimen172">172dp</dimen>
+    <dimen name="dimen176">176dp</dimen>
+    <dimen name="dimen180">180dp</dimen>
+    <dimen name="dimen190">190dp</dimen>
+    <dimen name="dimen196">190dp</dimen>
+    <dimen name="dimen200">200dp</dimen>
+    <dimen name="dimen203">203dp</dimen>
+    <dimen name="dimen210">210dp</dimen>
+    <dimen name="dimen214">214dp</dimen>
+    <dimen name="dimen224">224dp</dimen>
+    <dimen name="dimen234">234dp</dimen>
+    <dimen name="dimen248">248dp</dimen>
+    <dimen name="dimen250">250dp</dimen>
+    <dimen name="dimen254">254dp</dimen>
+    <dimen name="dimen256">256dp</dimen>
+    <dimen name="dimen272">272dp</dimen>
+    <dimen name="dimen282">282dp</dimen>
+    <dimen name="dimen292">292dp</dimen>
+    <dimen name="dimen300">300dp</dimen>
+    <dimen name="dimen314">314dp</dimen>
+    <dimen name="dimen350">350dp</dimen>
+    <dimen name="dimen364">364dp</dimen>
+    <dimen name="dimen390">390dp</dimen>
+    <dimen name="dimen400">400dp</dimen>
+    <dimen name="dimen454">454dp</dimen>
+    <dimen name="dimen490">490dp</dimen>
+
+
+    <!-- 规范设置字体大小 -->
+    <dimen name="size38">38sp</dimen>
+    <dimen name="size37">37sp</dimen>
+    <dimen name="size36">36sp</dimen>
+    <dimen name="size35">35sp</dimen>
+    <dimen name="size34">34sp</dimen>
+    <dimen name="size33">33sp</dimen>
+    <dimen name="size32">32sp</dimen>
+    <dimen name="size31">31sp</dimen>
+    <dimen name="size30">30sp</dimen>
+    <dimen name="size29">29sp</dimen>
+    <dimen name="size28">28sp</dimen>
+    <dimen name="size26">26sp</dimen>
+    <dimen name="size25">25sp</dimen>
+    <dimen name="size24">24sp</dimen>
+    <dimen name="size22">22sp</dimen>
+    <dimen name="size21">21sp</dimen>
+    <dimen name="size20">20sp</dimen>
+    <dimen name="size19">19sp</dimen>
+    <dimen name="size18">18sp</dimen>
+    <dimen name="size17">17sp</dimen>
+    <dimen name="size16">16sp</dimen>
+    <dimen name="size15">15sp</dimen>
+    <dimen name="size14">14sp</dimen>
+    <dimen name="size13">13sp</dimen>
+    <dimen name="size12">12sp</dimen>
+    <dimen name="size11">11sp</dimen>
+    <dimen name="size10">10sp</dimen>
+    <dimen name="size9">9sp</dimen>
+    <dimen name="size8">8sp</dimen>
+
+
+    <!-- CCP -->
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+
+    <!-- 多路视频dimen定义 -->
+
+
+    <!-- The primary text size -->
+    <!-- The primary text size -->
+    <!-- The ccp button text size -->
+    <!-- The name large text size -->
+
+    <!-- The ccp item space -->
+    <!-- the mode developer or experience desc space -->
+    <!-- The primary margin space -->
+    <!-- The notice itemStatus bar height size -->
+    <!-- The secondary margin space -->
+    <!-- The ccp icon text or edit height -->
 </resources>

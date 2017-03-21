@@ -1,6 +1,8 @@
 package com.ky3h.farmwork;
 
+import android.content.ContentValues;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Handler;
 import android.os.Message;
 import android.view.View;
@@ -12,6 +14,9 @@ import android.widget.Toast;
 
 import com.ky3h.farmwork.application.Application;
 import com.ky3h.farmwork.base.BaseActivity;
+import com.ky3h.farmwork.bean.User;
+import com.ky3h.farmwork.db.DbHelper;
+import com.ky3h.farmwork.db.Userdao;
 import com.ky3h.farmwork.netrequest.UserManager;
 import com.ky3h.farmwork.utils.NoHttpUtil;
 import com.ky3h.farmwork.utils.SharedUtils;

@@ -20,4 +20,6 @@ public class Fragment_quality extends Fragment {
 
         return view;
     }
+
+
 }

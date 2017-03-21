@@ -8,6 +8,10 @@
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bianshi_main_la_anim.xml",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\drawable\\bianshi_main_la_anim.xml"
+    },
+    {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_seekbar_thumb_material.xml"
     },
@@ -32,6 +36,10 @@
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_dialog_material_background_dark.xml"
     },
     {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bianshi_main_duo_anim.xml",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\drawable\\bianshi_main_duo_anim.xml"
+    },
+    {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_switch_thumb_material.xml"
     },
@@ -40,8 +48,16 @@
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bianshi_main_mi_anim.xml",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\drawable\\bianshi_main_mi_anim.xml"
+    },
+    {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bianshi_main_ruai_anim.xml",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\drawable\\bianshi_main_ruai_anim.xml"
     },
     {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
@@ -76,6 +92,18 @@
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bianshi_main_sao_anim.xml",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\drawable\\bianshi_main_sao_anim.xml"
+    },
+    {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\my_progress.xml",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\drawable\\my_progress.xml"
+    },
+    {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\button_baogao_duihuan_selector.xml",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\drawable\\button_baogao_duihuan_selector.xml"
+    },
+    {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_textfield_search_material.xml"
     },
@@ -84,8 +112,16 @@
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bianshi_pinyin_anim.xml",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\drawable\\bianshi_pinyin_anim.xml"
+    },
+    {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_edit_text_material.xml"
+    },
+    {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\button_baogao_goumai_selector.xml",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\drawable\\button_baogao_goumai_selector.xml"
     },
     {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
@@ -98,6 +134,10 @@
     {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_track_material.xml",
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\checkbox_click.xml",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\drawable\\checkbox_click.xml"
     },
     {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",

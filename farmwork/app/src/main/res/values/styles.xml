@@ -36,8 +36,14 @@
     <style name="bianshi_zi_img_style">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_weight">0</item>
+        <item name="android:layout_weight">1</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_gravity">center|center_horizontal</item>
+    </style>
+    <style name="big_progress_bar_style">
+        <item name="android:indeterminateOnly">true</item>
+        <item name="android:indeterminateDrawable">@drawable/my_progress</item>
+        <item name="android:indeterminateBehavior">repeat</item>
+        <item name="android:indeterminateDuration">2000</item>
     </style>
 </resources>

@@ -12,6 +12,10 @@
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_action_menu_item_layout.xml"
     },
     {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\softupdate_progress.xml",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\layout\\softupdate_progress.xml"
+    },
+    {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_close_item_material.xml",
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
@@ -54,6 +58,10 @@
     {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\notification_template_big_media.xml"
+    },
+    {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_baogao.xml",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\layout\\activity_baogao.xml"
     },
     {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple_overlay_action_mode.xml",
@@ -112,6 +120,10 @@
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_screen_toolbar.xml"
     },
     {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_baogao_list.xml",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\layout\\activity_baogao_list.xml"
+    },
+    {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_action_menu_layout.xml"
     },
@@ -132,6 +144,10 @@
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\support_simple_spinner_dropdown_item.xml"
     },
     {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\progress_wait_dialog.xml",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\layout\\progress_wait_dialog.xml"
+    },
+    {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_quality.xml",
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\layout\\fragment_quality.xml"
     },
@@ -148,12 +164,12 @@
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
-        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
-        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout\\design_layout_tab_icon.xml"
-    },
-    {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_singlechoice_material.xml",
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_tab_icon.xml",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.3.0\\res\\layout\\design_layout_tab_icon.xml"
     },
     {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_up_container.xml",
@@ -162,6 +178,10 @@
     {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_material.xml",
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_baogao_list_item.xml",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\layout\\activity_baogao_list_item.xml"
     },
     {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_layout_snackbar.xml",
@@ -176,16 +196,20 @@
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_screen_content_include.xml"
     },
     {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tijian_again_dialog.xml",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\layout\\tijian_again_dialog.xml"
+    },
+    {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\fragment_mine.xml",
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\layout\\fragment_mine.xml"
     },
     {
-        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
-        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\notification_media_action.xml"
-    },
-    {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\nav_header.xml",
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\layout\\nav_header.xml"
+    },
+    {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\notification_media_action.xml"
     },
     {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_header.xml",
@@ -224,12 +248,20 @@
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_action_mode_bar.xml"
     },
     {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_bianshiyanshi.xml",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\layout\\activity_bianshiyanshi.xml"
+    },
+    {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_list_menu_item_checkbox.xml",
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\layout\\abc_list_menu_item_checkbox.xml"
     },
     {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\splash_activity.xml",
         "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\layout\\splash_activity.xml"
+    },
+    {
+        "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_login.xml",
+        "source": "G:\\HX-APP\\farmwork\\farmwork\\app\\src\\main\\res\\layout\\dialog_login.xml"
     },
     {
         "merged": "G:\\HX-APP\\farmwork\\farmwork\\app\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",

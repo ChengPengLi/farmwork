@@ -2,14 +2,19 @@ package com.ky3h.farmwork.netrequest;
 
 import android.os.Handler;
 import android.os.Message;
+
 import android.text.TextUtils;
 import android.util.Log;
 
+import com.alibaba.fastjson.JSON;
 import com.ky3h.farmwork.application.AppConfig;
+import com.ky3h.farmwork.bean.Member;
 import com.ky3h.farmwork.bean.User;
-import com.ky3h.farmwork.utils.Constants;
+import com.ky3h.farmwork.utils.Constant;
+
 import com.ky3h.farmwork.utils.NoHttpUtil;
 import com.ky3h.farmwork.utils.ResponseStatus;
+import com.loopj.android.http.RequestParams;
 import com.yolanda.nohttp.NoHttp;
 import com.yolanda.nohttp.RequestMethod;
 import com.yolanda.nohttp.rest.OnResponseListener;
@@ -17,13 +22,14 @@ import com.yolanda.nohttp.rest.Request;
 import com.yolanda.nohttp.rest.RequestQueue;
 import com.yolanda.nohttp.rest.Response;
 
+import org.apache.http.Header;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+
 /**
  * Created by lipengcheng on 2016/8/16.
- * you are sb
  */
 public class UserManager {
     private Handler handler;
@@ -39,12 +45,17 @@ public class UserManager {
         this.handler = handler;
     }
 
+    public UserManager() {
+
+    }
+
+
     public static User getLoginedUser() {
         return loginedUser;
     }
 
     public void LoginFromNohttp(final String username, String password, RequestQueue requestQueue) {
-        Request<String> request = NoHttp.createStringRequest(Constants.LOGIN_URL, RequestMethod.POST);
+        Request<String> request = NoHttp.createStringRequest(Constant.LOGIN_URL, RequestMethod.POST);
         request.add("username", username);
         request.add("password", password);
         this.username = username;
@@ -59,10 +70,12 @@ public class UserManager {
         requestQueue.add(NOHTTP_WHAT_LOGIN, request, onResponseListener);
     }
 
+
     private OnResponseListener<String> onResponseListener = new OnResponseListener<String>() {
         @SuppressWarnings("unused")
         @Override
         public void onSucceed(int what, Response<String> response) {
+            Log.i("111", response.get());
             if (what == NOHTTP_WHAT_LOGIN) {
                 String result = response.get();
                 Log.i("111", result);
@@ -144,10 +157,12 @@ public class UserManager {
 
             }
         }
+
         @Override
         public void onStart(int i) {
 
         }
+
         @Override
         public void onFailed(int i, String s, Object o, Exception e, int i1, long l) {
 
@@ -184,5 +199,6 @@ public class UserManager {
         }
         return null;
     }
+
 }
 

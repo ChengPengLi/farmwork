@@ -38,6 +38,7 @@ public class SplashActivity extends BaseActivity {
                 } else {
                     intent = new Intent(SplashActivity.this, Login.class);
                     startActivity(intent);
+                    finish();
 
                 }
                 break;
@@ -92,16 +93,20 @@ public class SplashActivity extends BaseActivity {
                     dismissLoadingDialog();
                     intent = new Intent(SplashActivity.this, Login.class);
                     startActivity(intent);
+                    finish();
                     break;
                 case UserManager.LOGIN_NETWORK_ERROR:
                     showShortToast("抱歉,您的网络连接有问题,请重新尝试");
                     dismissLoadingDialog();
                     chongxin.setVisibility(View.VISIBLE);
                     startActivity(intent);
+                    finish();
                     break;
                 case UserManager.LOGIN_SUCCESS:
+                    showShortToast("登录成功，欢迎！！");
                     intent = new Intent(SplashActivity.this, MainActivity.class);
                     startActivity(intent);
+                    finish();
                     break;
 
 

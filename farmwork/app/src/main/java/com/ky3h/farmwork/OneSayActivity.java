@@ -2,6 +2,7 @@ package com.ky3h.farmwork;
 
 import android.content.Intent;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -25,8 +26,10 @@ public class OneSayActivity extends BaseActivity {
     @Override
     public void initView() {
         toolbar = (Toolbar) findViewById(R.id.tooolbar);
-        setSupportActionBar(toolbar);
         toolbar.setTitle("经络状态评估");
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         img_say = (ImageView) findViewById(R.id.img_say);
 
     }
@@ -48,5 +51,15 @@ public class OneSayActivity extends BaseActivity {
         setContentView(R.layout.layput_one_say);
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                finish();
+                break;
 
+
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

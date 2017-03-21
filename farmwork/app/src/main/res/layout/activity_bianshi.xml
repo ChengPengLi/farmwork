@@ -2,39 +2,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#fff"
+    android:background="@color/white"
     android:orientation="vertical">
 
-    <android.support.design.widget.AppBarLayout
-        android:id="@+id/appbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/tooolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#1c05b1"
-            android:fitsSystemWindows="true"
-            app:layout_scrollFlags="scroll|enterAlways|snap"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"></android.support.v7.widget.Toolbar>
-    </android.support.design.widget.AppBarLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/dimen0"
         android:layout_weight="3"
         android:background="@mipmap/wenyin_back"
         android:orientation="vertical"
-        android:weightSum="10" >
+        android:weightSum="10">
 
         <ImageView
             android:id="@+id/bianshi_main_img"
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
+            android:layout_height="@dimen/dimen0"
             android:layout_gravity="center"
             android:layout_weight="5.5"
             android:src="@mipmap/wenyin_dou1" />
@@ -42,24 +25,24 @@
         <ImageView
             android:id="@+id/bianshi_pinyin_img"
             android:layout_width="wrap_content"
-            android:layout_height="0dp"
+            android:layout_height="@dimen/dimen0"
             android:layout_gravity="center"
             android:layout_weight="1.5"
             android:src="@mipmap/duo_03" />
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="@dimen/dimen0"
             android:layout_gravity="center"
             android:layout_weight="3"
-            android:gravity="center" >
+            android:gravity="center">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@mipmap/wenyin_kuang"
-                android:paddingLeft="5dp"
-                android:paddingRight="5dp" >
+                android:paddingLeft="@dimen/dimen5"
+                android:paddingRight="@dimen/dimen5">
 
                 <ImageView
                     android:id="@+id/zi_img1"
@@ -89,13 +72,12 @@
         </LinearLayout>
     </LinearLayout>
 
-    <RelativeLayout 
+    <RelativeLayout
         android:id="@+id/wenyin_bianshi"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/dimen0"
         android:layout_weight="1"
-        android:background="#fff"
-        >
+        android:background="@color/white">
 
         <ImageView
             android:id="@+id/record_start"
@@ -103,20 +85,14 @@
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:src="@mipmap/wenyin_kaishibianshi" />
-        <!-- <ProgressBar
-            android:id="@+id/uploadbar"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="match_parent"
-            android:layout_height="20px"
-            android:visibility="gone" />
- -->
+
         <ImageView
             android:id="@+id/bianshi_demo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
             android:layout_alignParentTop="true"
-            android:src="@mipmap/wenyin_shipin1" />
+            android:src="@mipmap/wenyin_history_record" />
 
     </RelativeLayout>
 

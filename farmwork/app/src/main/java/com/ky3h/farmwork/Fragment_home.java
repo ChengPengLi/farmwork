@@ -19,8 +19,6 @@ import com.ky3h.farmwork.adapter.MyRecyclearAdapter;
 import com.ky3h.farmwork.bean.Good;
 import com.ky3h.farmwork.utils.Cheeses;
 import com.ky3h.farmwork.utils.RecycleViewDivider;
-import com.yolanda.nohttp.NoHttp;
-import com.yolanda.nohttp.rest.Request;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -92,5 +90,74 @@ public class Fragment_home extends Fragment {
             list.add(new Good(Cheeses.getRandomCheeseDrawable(), array[random.nextInt(array.length)]));
         }
         return list;
+    }
+
+    public static class MessageType {
+        public static final int MESSAGE_UPDATE_TIME = 1;
+        public static final int MESSAGE_UPDATE_WEATHER = 2;
+        public static final int MESSAGE_UPDATE_CITY = 3;
+        public static final int MESSAGE_LOGIN = 4;
+        public static final int MESSAGE_REGIST = 5;
+        public static final int MESSAGE_GET_CAPTCHA = 6;
+        public static final int MESSAGE_MODIFY_PASSWORD = 7;
+        public static final int MESSAGE_ADD_MEMBER = 8;
+        public static final int MESSAGE_GET_MEMBER = 9;
+        public static final int MESSAGE_GET_LECTURE = 10;
+        public static final int MESSAGE_BIND_CARD = 11;
+        public static final int MESSAGE_GET_CARDS = 12;
+        public static final int MESSAGE_DELETE_MEMBER = 13;
+        public static final int MESSAGE_MODIFY_MEMBER = 14;
+        public static final int MESSAGE_RESERVE_FREE_LECTURE = 15;
+        public static final int MESSAGE_RESERVE_NOT_FREE_LECTURE = 16;
+        public static final int MESSAGE_GET_MY_LECTURE = 17;
+        public static final int MESSAGE_GET_CAPTCHA_AGAIN = 18;
+        public static final int MESSAGE_CREATE_NEW_PASSWORD = 19;
+        public static final int MESSAGE_GET_QUESTIONNAIRE = 20;
+        public static final int MESSAGE_UPLOAD_ECG_FILE = 21;
+        public static final int MESSAGE_GET_REPORT = 22;
+        public static final int MESSAGE_COMMIT_CONSULTATION = 23;
+        public static final int MESSAGE_UPLOAD_FILE = 24;
+        public static final int MESSAGE_GET_MY_CONSULTATION = 25;
+        public static final int MESSAGE_GET_HEALTH_INFORMATION_CATEGORY = 26;
+        public static final int MESSAGE_GET_DEPARTMENT = 27;
+        public static final int MESSAGE_GET_NEW_INFORMATION = 28;
+        public static final int MESSAGE_GET_INFORMATION_BY_ID = 29;
+        public static final int MESSAGE_GET_AREA = 30;
+        public static final int MESSAGE_GET_HOSPITAL = 31;
+        public static final int MESSAGE_GET_PARENT_AREA = 32;
+        public static final int MESSAGE_GET_RECORD_INDEX_DATA = 33;
+        public static final int MESSAGE_GET_ID_BY_AREA = 34;
+        public static final int MESSAGE_CREATE_ORDER = 35;
+        public static final int MESSAGE_GET_MESSAGE = 36;
+        public static final int MESSAGE_GET_DOCTORS = 37;
+        public static final int MESSAGE_UPDATE_USER_INFO = 38;
+        public static final int MESSAGE_RESERVE_DOCTOR = 39;
+        public static final int MESSAGE_GET_RESERVES = 40;
+        public static final int MESSAGE_GET_VIDEO_RESERVES = 41;
+        public static final int MESSAGE_GET_VIDEO_ACCOUNT = 42;
+        public static final int MESSAGE_CANCLE_ORDER = 43;
+        public static final int MESSAGE_GET_PRIVATE_HOSPITALS = 44;
+        public static final int MESSAGE_UPLOAD_DATA = 45;
+        public static final int MESSAGE_SET_PRIVATE_HOSPITAL = 46;
+        public static final int MESSAGE_GET_BLOOD_SUGAR_DATA = 47;
+        public static final int MESSAGE_UPLOAD_AUDIO = 48;
+        public static final int MESSAGE_GET_REPORT_BY_SN = 49;
+        public static final int MESSAGE_GET_SUBJECT_CATEGORY_ID = 50;
+        public static final int MESSAGE_COMMIT_ANSWER = 51;
+        public static final int MESSAGE_GET_SCHEDULE_LIST = 52;
+        public static final int MESSAGE_QUERY_REMOTE_FAILED = 53;
+        public static final int MESSAGE_GET_HEALTH_ADVISER_CATEGORY = 54;
+        public static final int MESSAGE_SET_HEALTH_ADVISOR = 55;
+        public static final int MESSAGE_GET_HEALTH_ADVISORS_BY_CATEGORY = 56;
+        public static final int MESSAGE_GET_SELECTED_HEALTH_ADVISOR_BY_CATEGORY = 57;
+        public static final int MESSAGE_GET_HEALTH_ADVISOR_LEVEL = 58;
+        public static final int MESSAGE_ORDER_ID = 59;
+        public static final int MESSAGE_GET_HEALTH_TIPS = 60;
+        public static final int MESSAGE_GET_ADVERTISEMENT = 61;
+        public static final int MESSAGE_GET_VISCERA_IDENTITYS = 62;
+        public static final int MESSAGE_GET_PAYMENT = 63;
+        public static final int MESSAGE_CHECK_LOGIN = 64;
+        public static final int MESSAGE_CHECK_IS_CANCLED = 65;
+        public static final int MESSAGE_GET_ECG_REPORT = 66;
     }
 }

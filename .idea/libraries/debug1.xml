@@ -1,0 +1,24 @@
+<component name="libraryTable">
+  <library name="debug1">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/farmwork/app/build/intermediates/pre-dexed/debug/nohttp1.0.4_58f70c03164d01be6281bb97276485408c9bd5f5.jar!/" />
+      <root url="jar://$PROJECT_DIR$/farmwork/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-23.3.0_2cd91ef76d8c4806ba1d31778d5ddfbc5b31f441.jar!/" />
+      <root url="jar://$PROJECT_DIR$/farmwork/app/build/intermediates/pre-dexed/debug/android-async-http-1.4.6_8198644c2a982be8efea5c8a267e572257dbf2bd.jar!/" />
+      <root url="jar://$PROJECT_DIR$/farmwork/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-23.4.0_63a78a47ca09a15d69f4ff7728398b54fa2cd334.jar!/" />
+      <root url="jar://$PROJECT_DIR$/farmwork/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.4.0_de77c2e7600c579bc96d2fd8ebae9c9c9a3edead.jar!/" />
+      <root url="jar://$PROJECT_DIR$/farmwork/app/build/intermediates/pre-dexed/debug/internal_impl-23.4.0_84a7b139f5fe9444a056b2024a73b4387a1d83ed.jar!/" />
+      <root url="jar://$PROJECT_DIR$/farmwork/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.4.0_236e75022bebb6b4759257eac20b5d30e0599978.jar!/" />
+      <root url="jar://$PROJECT_DIR$/farmwork/app/build/intermediates/pre-dexed/debug/hyphenatechat_3.1.3_873d0288ec641c0a7969f4ccc4604f0e802ba303.jar!/" />
+      <root url="jar://$PROJECT_DIR$/farmwork/app/build/intermediates/pre-dexed/debug/debug_da2bc3a31e8795fe4f0e788981d50bc4aaf6c3e1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/farmwork/app/build/intermediates/pre-dexed/debug/fastjson-1.1.26_66b09d4d4c70f3c8bf0349054d059b7650fe5541.jar!/" />
+      <root url="jar://$PROJECT_DIR$/farmwork/app/build/intermediates/pre-dexed/debug/support-annotations-23.4.0_a275f1eeef02f7248d3e01504ea406b427c56a78.jar!/" />
+      <root url="jar://$PROJECT_DIR$/farmwork/app/build/intermediates/pre-dexed/debug/glide-3.6.0_6c9ffa1b2155078278b83375aef7a3ad2ab5a57b.jar!/" />
+      <root url="jar://$PROJECT_DIR$/farmwork/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-23.4.0_2efbe39474d0d25d903ddc4156bf5bbebf5dfc0a.jar!/" />
+      <root url="jar://$PROJECT_DIR$/farmwork/app/build/intermediates/pre-dexed/debug/de.hdodenhof-circleimageview-1.3.0_12574de9af54b8d30ece4fd7bc24d6decc510cff.jar!/" />
+      <root url="jar://$PROJECT_DIR$/farmwork/app/build/intermediates/pre-dexed/debug/com.android.support-design-23.3.0_8abe3763fa56db0e72a6beb67966d64477d7b87d.jar!/" />
+      <root url="jar://$PROJECT_DIR$/farmwork/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-23.3.0_8707b130bb963733fe67d6fad6a0c31e50c0e676.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

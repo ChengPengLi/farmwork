@@ -4,6 +4,7 @@ package com.ky3h.farmwork;
 import android.graphics.Bitmap;
 import android.graphics.Color;
 import android.os.Build;
+import android.support.annotation.BinderThread;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
@@ -15,6 +16,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatDelegate;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -25,6 +27,7 @@ import com.ky3h.farmwork.base.BaseActivity;
 import com.ky3h.farmwork.bean.User;
 import com.ky3h.farmwork.netrequest.UserManager;
 import com.ky3h.farmwork.utils.NoHttpUtil;
+import com.ky3h.farmwork.utils.StringUtil;
 import com.yolanda.nohttp.NoHttp;
 import com.yolanda.nohttp.rest.CacheMode;
 import com.yolanda.nohttp.rest.OnResponseListener;
@@ -38,6 +41,7 @@ import java.util.List;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class MainActivity extends BaseActivity {
+
     private Toolbar toolbar;
     private ViewPager pager;
     private Fragment_home fragment_home;
@@ -50,52 +54,41 @@ public class MainActivity extends BaseActivity {
     private CircleImageView user_photo;
     private TextView user_name;
     private NavigationView navigationView;
-
     @Override
     public void touchListener(View v) {
-
     }
-
-
     @Override
     public void setContentView() {
         setContentView(R.layout.activity_main);
     }
-
     @Override
     public void dealLogicBeforeInitView() {
-
     }
-
     @Override
     public void initView() {
         toolbar = (Toolbar) findViewById(R.id.tooolbar);
+        toolbar.setTitle("我的应用");//必须在setSupportActionBar前调用 否则无效
+        toolbar.setTitleTextColor(Color.parseColor("#FFFFFF"));
         setSupportActionBar(toolbar);
-
         final ActionBar ab = getSupportActionBar();
         ab.setHomeAsUpIndicator(R.mipmap.ic_menu);
         ab.setDisplayHomeAsUpEnabled(true);
         drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         if (navigationView != null) {
             setupDrawerContent(navigationView);
-
         }
-
         titles = new ArrayList<>();
         titles.add("首页");
         titles.add("分类");
         titles.add("精品");
         titles.add("我的");
-        toolbar.setTitle("我的应用");
-        toolbar.setTitleTextColor(Color.parseColor("#FFFFFF"));
         pager = (ViewPager) findViewById(R.id.viewpager);
         fragment_home = new Fragment_home();
         fragment_mine = new Fragment_mine();
         fragment_quality = new Fragment_quality();
         fragment_type = new Fragment_type();
-        fragmentList = new ArrayList<Fragment>();
+        fragmentList = new ArrayList<>();
         FloatingActionButton fb = (FloatingActionButton) findViewById(R.id.fab);
         fb.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -154,10 +147,14 @@ public class MainActivity extends BaseActivity {
                 user_photo = (CircleImageView) view.findViewById(R.id.drawer_userImage);
                 user_name = (TextView) view.findViewById(R.id.drawer_userName);
                 User user = UserManager.getLoginedUser();
-                RequestQueue requestQueue = NoHttpUtil.getRequestQueue();
-                Request request = NoHttp.createImageRequest(user.getMemberImage());
-                request.setCacheMode(CacheMode.NONE_CACHE_REQUEST_NETWORK);
-                requestQueue.add(1, request,lsitner);
+
+                if(!StringUtil.isNullOrEmpty(user.getMemberImage())){
+                    RequestQueue requestQueue = NoHttpUtil.getRequestQueue();
+                    Request request = NoHttp.createImageRequest(user.getMemberImage());
+                    request.setCacheMode(CacheMode.NONE_CACHE_REQUEST_NETWORK);
+                    requestQueue.add(1, request,lsitner);
+                }
+
                 user_name.setText(user.getName());
                 break;
             case R.id.menu_night_mode_system:
@@ -178,11 +175,27 @@ public class MainActivity extends BaseActivity {
     }   
 
     private void setupDrawerContent(NavigationView navigationView) {
+//        navigationView.setItemIconTintList(null);
         navigationView.setNavigationItemSelectedListener(
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
                     public boolean onNavigationItemSelected(MenuItem menuItem) {
-                        menuItem.setChecked(true);
+                        switch (menuItem.getItemId()){
+                            case R.id.nav_friends:
+
+                                break;
+                            case R.id.nav_discussion:
+
+                                break;
+                            case R.id.nav_home:
+
+                                break;
+                            case R.id.nav_messages:
+
+                                break;
+
+                        }
+
                         drawerLayout.closeDrawers();
                         return true;
                     }

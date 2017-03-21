@@ -1,58 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="arm64-v8a,armeabi-v7a,armeabi"
-    api-level="23"
+    api-level="24"
     density="xxhdpi"
     format="8"
-    plugin-version="2.2.2"
-    timestamp="18446157782379"
+    plugin-version="2.2.0"
+    timestamp="22939279492259"
     token="-4819485891693804860"
-    verifier="COMPATIBLE" >
+    verifier="FULL_BUILD_REQUESTED" >
 
     <task
         name="javac"
-        duration="177" />
+        duration="0" />
     <task
         name="instant-run-dex"
-        duration="259" />
+        duration="0" />
     <task
         name="instant-run-transform"
-        duration="11" />
+        duration="0" />
     <task
         name="verifier"
-        duration="2" />
+        duration="0" />
 
     <artifact
-        location="G:\HX-APP\farmwork\farmwork\app\build\intermediates\reload-dex\debug\classes.dex"
-        type="RELOAD_DEX" />
+        location="G:\HX-APP\farmwork\farmwork\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
 
     <build
-        timestamp="17914186571034"
-        verifier="MANIFEST_FILE_CHANGE" >
+        timestamp="22939279492259"
+        verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="G:\HX-APP\farmwork\farmwork\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
-    </build>
-    <build
-        timestamp="18133496738080"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="G:\HX-APP\farmwork\farmwork\app\build\intermediates\builds\debug\18133496738080\classes.dex"
-            type="RELOAD_DEX" />
-    </build>
-    <build
-        timestamp="18305434360617"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="G:\HX-APP\farmwork\farmwork\app\build\intermediates\instant-run-resources\resources-debug.ir.ap_"
-            type="RESOURCES" />
-    </build>
-    <build
-        timestamp="18446157782379"
-        verifier="COMPATIBLE" >
-        <artifact
-            location="G:\HX-APP\farmwork\farmwork\app\build\intermediates\reload-dex\debug\classes.dex"
-            type="RELOAD_DEX" />
     </build>
 
 </instant-run>

@@ -1,13 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <color name="transparentmy">#8000</color>
+    <color name="divider">#e0e0e0</color>
+    <color name="clouds">#eeeeee</color>
+    <color name="open">#009ef3</color>
+    <color name="a000000">#000000</color>
+    <color name="f2f1ef">#f2f1ef</color>
+    <color name="a5c5c5c">#5c5c5c</color>
+    <color name="cacaca">#cacaca</color>
+    <color name="eff3f4">#eff3f4</color>
+    <color name="cccbcb">#cccbcb</color>
+    <color name="user_music">#d6d7d9</color>
+    <color name="chengse_state_juse">#ff6f5e</color>
+    <color name="red">#FF0000</color>
+    <!-- 顶部导航栏背景 -->
+    <color name="title_bar_bg">#009ef3</color>
+    <!-- 顶部导航栏底部线 -->
+    <color name="f0f0f0">#f0f0f0</color>
+    <color name="mask">#34000000</color>
+    <color name="qianhuise">#666666</color>
+    <color name="shenhuise">#333333</color>
+    <color name="e8e8e8">#e8e8e8</color>
+    <color name="c7c7cd">#c7c7cd</color>
+    <color name="feef58">#feef58</color>
+    <color name="a575e64">#575e64</color>
+    <color name="fc5959">#fc5959</color>
+    <color name="ff6f5e">#ff6f5e</color>
+    <color name="a5db4fb">#5db4fb</color>
+    <color name="a69ca00">#69ca00</color>
+    <!-- radiobutton的颜色 -->
+    <color name="a01a0f2">#01a0f2</color>
+    <color name="a0282bf">#0282bf</color>
+    <color name="aaaaaa">#aaaaaa</color>
+    <color name="a929292">#929292</color>
+    <color name="a05c0ee">#05c0ee</color>
+    <color name="a999999">#999999</color>
+
+    <!-- 知己档案 最新界面辨识结果字体颜色 -->
+    <color name="fe984d">#fe984d</color>
+    <!-- 橘黄色 -->
+    <!-- 绿色 -->
+    <color name="ff4c79">#ff4c79</color>
+    <!-- 红色 -->
+
+
+    <!-- 知己档案 心电结果字体颜色 -->
+    <!-- 浅绿色 -->
+    <!-- 红色部分与最新界面字体一样 -->
+
+
+    <!-- 知己档案 心理结果字体颜色 -->
+    <!-- 橘黄色 -->
+    <!-- 绿色 -->
+    <!-- 红色 -->
+
+
+    <!-- 知己档案 经络结果字体颜色（橘黄色）与最新界面字体颜色一致 -->
+
+
+    <!-- 字体Edittext输入显示的颜色 -->
+    <color name="a7e7e7e">#7e7e7e</color>
+    <color name="BgColor">#ffd1dce9</color>
+    <color name="blue">#05c1ee</color>
+    <color name="common_title">#F9F9F9</color>
+    <color name="shipin_yiyue">#4dddc6</color>
+    <color name="e9e9e9">#e9e9e9</color>
+    <color name="cccccc">#cccccc</color>
+    <color name="a1fa5ee">#1fa5ee</color>
+    <color name="black">#000000</color>
+    <color name="report_tab_text_color">#717574</color>
+    <color name="page_before_color">#329fff</color>
+    <color name="blue_button">#3fcadb</color>
+    <!-- 检测提示 -->
+    <color name="e79947">#e79947</color>
+    <color name="submit_chengse">#ff9945</color>
+    <color name="submit_not_normal">#f60a0c</color>
+    <color name="submit_normal">#68c900</color>
+    <color name="ziticolor">#878787</color>
+    <color name="xindian_xinlv_color">#41cadb</color>
+    <color name="chengse">#FF6600 </color>
+    <color name="chengse2">#ff9933</color>
+    <color name="lvse2">#4fd164</color>
+    <color name="d8">#d8d8d8</color>
+    <!-- 重新检测颜色 -->
+    <color name="a51bbe3">#51bbe3</color>
+
+    <!-- 疾病程度 -->
+    <color name="light">#00cb00</color>
+    <color name="moderate">#ff9a24</color>
+    <color name="severe">#ff7057</color>
+    <color name="qianblue">#00CC99</color>
+
     <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#71727b</color>
+    <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="swipe_color_1">#182471</color>
-    <color name="swipe_color_2">#FF4081</color>
-    <color name="swipe_color_3">#0d0b0c</color>
-    <color name="swipe_color_4">#0ade38</color>
-    <color name="swipe_background_color">#cecece</color>
+
+
+    <!-- <color name="red">#ff2121</color> -->
+
+    <!-- <color name="blue">#41a3f5</color> -->
+    <color name="yueyao_blue">#2fa1f9</color>
+
+    <!--容联-->
+
+    <color name="white">#FFFFFFFF</color>
     <color name="transparent">#00000000</color>
+    <color name="voip_interface_text_color">#bababa</color>
+
+    <!-- version 3.6 -->
+    <!-- developer mode launcher normal color -->
+    <!-- developer mode launcher pressed color -->
+    <!-- experience mode launcher normal color -->
+    <!-- experience mode launcher normal color -->
+
+    <!-- 绿色 -->
+
+    <!-- 紫色 -->
+
+    <!-- 浅黄绿 -->
+
+    <!-- 红紫 -->
+
+    <!-- 灰色 -->
+
+    <!-- 半透明 -->
 
 </resources>

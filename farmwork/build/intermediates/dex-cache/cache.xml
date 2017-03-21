@@ -48,11 +48,20 @@
     </item>
     <item
         is-multidex="true"
+        jar="G:\HX-APP\farmwork\farmwork\app\libs\httpcore-4.4.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e3fd8ced1f52c7574af952e2e6da0df8df08eb82">
+        <dex dex="G:\HX-APP\farmwork\farmwork\app\build\intermediates\transforms\dex\debug\folders\1000\2\httpcore-4.4.6_ae08fb45c5daa5efecb32af262ca609179b60131\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="G:\HX-APP\farmwork\farmwork\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="7219c8825416ec653b70db1385b45cd144fed87b">
+        sha1="a030299207a1da1fb83018938d1199843c69e620">
         <dex dex="G:\HX-APP\farmwork\farmwork\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_f5fc1383cfca5d8bc2361e3a82c4d6aa7d6fa63b\classes.dex" />
     </item>
     <item
@@ -133,7 +142,7 @@
         jumboMode="true"
         optimize="true"
         revision="23.0.3"
-        sha1="8d5b88394714d303fc2bdec42ac2276c9dbf177d">
+        sha1="c38241412347c61e181124c1e1c26691d2e8d57e">
         <dex dex="G:\HX-APP\farmwork\farmwork\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_0bb177b1787ac05f183f46b065c1165875be7cdb\classes.dex" />
     </item>
     <item

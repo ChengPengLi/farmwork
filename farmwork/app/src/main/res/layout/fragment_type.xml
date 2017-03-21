@@ -2,29 +2,31 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#420b86"
+    android:background="#1e1e1e"
     android:orientation="vertical">
 
-
-    <!--<com.ky3h.farmwork.widget.ConstemView-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_margin="16dp"-->
-        <!--android:background="#7b0606" />-->
     <Button
+        android:id="@+id/jingluo"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="经络辨识"
-        android:id="@+id/jingluo"/>
+        android:layout_height="wrap_content" />
+
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/tizhi"
         android:text="体质辨识"
-        android:id="@+id/tizhi"/>
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <Button
+        android:id="@+id/zangfu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="脏腑辨识"
-        android:id="@+id/zangfu"/>
+        android:text="脏腑辨识"/>
+
+    <Button
+        android:id="@+id/wnjian"
+        android:text="文件上传"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

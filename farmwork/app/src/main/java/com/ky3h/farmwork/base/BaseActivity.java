@@ -7,6 +7,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
@@ -18,18 +19,22 @@ import com.hyphenate.chat.EMClient;
 import com.hyphenate.chat.EMOptions;
 import com.hyphenate.exceptions.HyphenateException;
 import com.hyphenate.util.NetUtils;
+import com.ky3h.farmwork.R;
 import com.ky3h.farmwork.Regist;
+import com.ky3h.farmwork.bean.DeviceInfo;
 import com.ky3h.farmwork.utils.SystemBarTintManager;
 import com.ky3h.farmwork.widget.LoadingDialog;
 
 import java.util.Iterator;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Created by lipengcheng on 2016/6/1.
  */
 public abstract class BaseActivity extends AppCompatActivity implements View.OnClickListener {
     private LoadingDialog loadingDialog;
+    public static DeviceInfo deviceInfo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,6 +69,20 @@ public abstract class BaseActivity extends AppCompatActivity implements View.OnC
         afterInitView();
 //        EMClient.getInstance().addConnectionListener(new MyConnectionListener());
 
+        if (deviceInfo == null) {
+            deviceInfo = new DeviceInfo();
+
+            DisplayMetrics dm = new DisplayMetrics();
+            getWindowManager().getDefaultDisplay().getMetrics(dm);
+
+            Locale locale = getResources().getConfiguration().locale;
+            deviceInfo.setUserAgentName("VoiceDiagnosis");
+            deviceInfo.setSoftver(getString(R.string.version));
+            deviceInfo.setWidthPixels(dm.widthPixels);
+            deviceInfo.setHeightPixels(dm.heightPixels);
+            deviceInfo.setLanguage(locale.getLanguage());
+            deviceInfo.setCountry(locale.getCountry());
+        }
     }
 
     @Override

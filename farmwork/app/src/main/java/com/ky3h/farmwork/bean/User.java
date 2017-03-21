@@ -22,6 +22,27 @@ public class User {
     private String JSESSIONID;
     private String token;
 
+    public User(int id, String userName, String name, String gender, String birthDate, int status, String identityType, String idNumber, String address, String phone, int memberChildId, String memberImage, String isMedicare, String JSESSIONID, String token) {
+        this.id = id;
+        this.userName = userName;
+        this.name = name;
+        this.gender = gender;
+        this.birthDate = birthDate;
+        this.status = status;
+        this.identityType = identityType;
+        this.idNumber = idNumber;
+        this.address = address;
+        this.phone = phone;
+        this.memberChildId = memberChildId;
+        this.memberImage = memberImage;
+        this.isMedicare = isMedicare;
+        this.JSESSIONID = JSESSIONID;
+        this.token = token;
+    }
+
+    public User() {
+    }
+
     public String getJSESSIONID() {
         return JSESSIONID;
     }
